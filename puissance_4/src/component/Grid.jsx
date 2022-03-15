@@ -12,7 +12,7 @@ class Grid extends React.Component {
     render() {
         return (
             <div className="container">
-                <h1>Salut</h1>
+                <h1>Le jeu commence</h1>
                 <span className="material-icons">person</span>
                 <span className="material-icons">person_outline</span>
             </div>

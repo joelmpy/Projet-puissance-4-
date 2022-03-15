@@ -40,7 +40,7 @@ class HomePage extends React.Component {
                             <img src={image1} alt="" />
                         </div>
                         <h2>Game</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odit veniam obcaecati animi velit explicabo eius iusto, molestias voluptate asperiores!</p>
+                        <p>C'est l'heure de jouer</p>
                         <Link to="/Grid">Commencer le game !</Link>
                     </div>
 
@@ -49,7 +49,7 @@ class HomePage extends React.Component {
                             <img src={image2} alt="" />
                         </div>
                         <h2>Instruction</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odit veniam obcaecati animi velit explicabo eius iusto, molestias voluptate asperiores!</p>
+                        <p>L'apprentissage avant la pratique clique dessus </p>
 
                         <Link to="/Instruction">lien vers la Page d'Instruction</Link>
                     </div>
