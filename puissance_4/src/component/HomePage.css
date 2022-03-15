@@ -1,0 +1,125 @@
+.h2{
+    padding-top: 20px;
+}
+
+/* Texte */ 
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .texte{
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.wrapper .dynamique-texte{
+  margin-left: 2px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.dynamique-texte li {
+  list-style: none;
+  color: red;
+  font-size: 60px;
+  font-weight: 400;
+  position: relative;
+  top : 0;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100%{
+    top: -360px
+  }
+  
+}
+
+.dynamique-texte li {
+  position: relative;
+}
+
+.dynamique-texte li ::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid red;
+  left: 0;
+  background-color:#082032 ;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+ 40% , 60% {
+   left:  calc(100% + 30px);
+ }
+ 100%{
+   left : 0
+ }
+}
+
+/* Carte */ 
+
+.container1 {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 370px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: rgb(62, 62, 62);
+  }
+  
+  .card-image img {
+    width: 370px;
+    height: 250px;
+    border-radius: 15px;
+  }
+  
+  .card p {
+    padding: 10px;
+  }
+  
+  .card h2 {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform:uppercase;
+  }
+  
+  .card a {
+    padding: 15px 20px;
+    color: white;
+    display: block;
+    text-align: center;
+    border: 1px solid #fff;
+    margin: 20px 50px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .card a:hover{
+    border-color: white;
+    background: black;
+    transition: 0.5s;
+    color: white;
+  }
+  
+  .card:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
+  
