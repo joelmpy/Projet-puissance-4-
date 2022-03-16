@@ -1,0 +1,25 @@
+.tableau {
+    height: 80vh;
+    border: 8px solid black;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableau p {
+    text-align: center;
+}
+
+.icon1{
+    font-size: 30px;
+   
+}
+
+.home2 {
+    /* background-color:#082032 ; */
+    background: url(../image/neon2.jpg);
+    background-position: center;
+    height: 110vh;
+    background-size: cover;
+  }

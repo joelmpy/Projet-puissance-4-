@@ -1,24 +1,63 @@
 
 
-.h2{
-    padding-top: 20px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  text-align: center;
+  color: #fff;
 }
 
-/* Texte */ 
+/* FONT FACE */ 
 
-.wrapper{
+@font-face {
+  font-family: papa;
+  src: url(../Retronoid.ttf);
+}
+
+@font-face {
+  font-family: maman;
+  src: url(../River\ Drive.ttf);
+}
+
+@font-face {
+  font-family: joel;
+  src: url(../Gameshow.ttf);
+}
+
+
+/* PAGE D'ACCEUIL */ 
+.home {
+
+  background: url(../image/home.jpg);
+  background-position: center;
+  height: 130vh;
+  background-size: cover;
+}
+
+.h2 {
+  padding-top: 20px;
+}
+
+/* Texte */
+
+.wrapper {
   display: flex;
   justify-content: center;
 }
 
-.wrapper .texte{
+.wrapper .texte {
   color: white;
-  font-size: 60px;
+  font-size: 45px;
+  padding: 10px;
   font-weight: 400;
   text-transform: uppercase;
+  font-family: papa;
 }
 
-.wrapper .dynamique-texte{
+/* DYNAMIQUE TEXTE */ 
+
+.wrapper .dynamique-texte {
   margin-left: 2px;
   line-height: 90px;
   height: 90px;
@@ -28,100 +67,132 @@
 .dynamique-texte li {
   list-style: none;
   color: red;
-  font-size: 60px;
-  font-weight: 400;
+  font-size: 70px;
+  font-weight: 100;
   position: relative;
-  top : 0;
+  font-family: maman;
+  top: 0;
   animation: slide 12s steps(4) infinite;
 }
 
 @keyframes slide {
-  100%{
-    top: -360px
+  100% {
+    top: -360px;
   }
-  
 }
 
 .dynamique-texte li {
   position: relative;
 }
 
-.dynamique-texte li ::after{
+.dynamique-texte li ::after {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   border-left: 2px solid red;
   left: 0;
-  background-color:#082032 ;
+  background:black;
   animation: typing 3s steps(10) infinite;
 }
 
 @keyframes typing {
- 40% , 60% {
-   left:  calc(100% + 30px);
- }
- 100%{
-   left : 0
- }
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
 }
 
-/* Carte */ 
+
+/* Titre puissance 4 */ 
+
+ .flash {
+  height: 20vh;
+  padding-top: 10px;
+  color:white;
+  -webkit-animation: flash linear 2s infinite;
+  animation: flash linear 2s infinite;
+  font-size: 100px;
+  font-family: joel;
+  text-align: center;
+  letter-spacing: 4px;
+ 
+}
+
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+
+
+/* Carte */
 
 .container1 {
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    width: 370px;
-    margin: 20px;
-    border-radius: 15px;
-    background-color: rgb(62, 62, 62);
-  }
-  
-  .card-image img {
-    width: 370px;
-    height: 250px;
-    border-radius: 15px;
-  }
-  
-  .card p {
-    padding: 10px;
-  }
-  
-  .card h2 {
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    text-transform:uppercase;
-  }
-  
-  .card a {
-    padding: 15px 20px;
-    color: white;
-    display: block;
-    text-align: center;
-    border: 1px solid #fff;
-    margin: 20px 50px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .card a:hover{
-    border-color: white;
-    background: black;
-    transition: 0.5s;
-    color: white;
-  }
-  
-  .card:hover{
-    background-color: rgb(62, 62, 62);
-    color: white;
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: all 1s ease;
-  }
-  
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 370px;
+  margin: 20px;
+  border-radius: 15px;
+  background:linear-gradient( to top right, rgb(109, 124, 208) 0%, rgb(1, 72, 107) 40%);
+  box-shadow: 1px 1px 30px rgb(52, 105, 136);
+}
+
+.card-image img {
+  width: 370px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.card p {
+  padding: 10px;
+
+}
+
+.card h2 {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.card a {
+  padding: 15px 20px;
+  color: white;
+  display: block;
+  text-align: center;
+  border: 1px solid #fff;
+  margin: 20px 50px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.card a:hover {
+  border-color: white;
+  background: black;
+  transition: 0.5s;
+  color: white;
+}
+
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
