@@ -1,4 +1,4 @@
-.tableau {
+/* .tableau {
     height: 80vh;
     border: 8px solid black;
     margin: 50px;
@@ -18,8 +18,107 @@
 
 .home2 {
     /* background-color:#082032 ; */
-    background: url(../image/neon2.jpg);
-    background-position: center;
+
+/* background-position: center;
     height: 110vh;
     background-size: cover;
-  }
+  } */
+
+
+.home5 {
+  background: url(../image/game.jpg) center fixed;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+table {
+  margin: 0 auto;
+  border-spacing: 0px 0px;
+}
+
+.button {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: red;
+  padding: 15px 20px;
+  color: white;
+  display: block;
+  text-align: center;
+  border: 5px solid #000;
+  text-decoration: none;
+  font-size: 15px;
+  width: 20%;
+  margin: auto;
+}
+
+.button:hover {
+  border-color: red;
+  background: black;
+  transition: 0.5s;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+
+.cell {
+  height: 70px;
+  width: 70px;
+  background-color: #1990ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.circle {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #000;
+  border-radius: 100px;
+}
+.circles {
+  margin: -40px 0 25px 0;
+  display: flex;
+  justify-content: center;
+}
+.red-sm {
+  background-color: red;
+}
+.yellow-sm {
+  background-color: yellow;
+}
+.message {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  padding: 20px;
+}
+.white {
+  height: 60px;
+  width: 60px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+.red {
+  height: 60px;
+  width: 60px;
+  background-color: red;
+  border-radius: 100px;
+  transition: background-color 0.5s;
+}
+.yellow {
+  height: 60px;
+  width: 60px;
+  background-color: yellow;
+  border-radius: 100px;
+  transition: background-color 0.5s;
+}
+
+

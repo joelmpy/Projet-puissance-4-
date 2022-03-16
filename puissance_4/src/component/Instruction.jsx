@@ -49,11 +49,13 @@ class Instruction extends React.Component {
 
                     
                 </div>
-                <div className='button'>
+                <div>
+
+                
                 <Link className='glow-on-hover' to="/Grid">Commencer le game !</Link>
                 <Link className='glow-on-hover1' to="/">Acceuil</Link>
-
                 </div>
+                
             </div>
 
         )
